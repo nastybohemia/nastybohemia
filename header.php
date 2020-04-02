@@ -5,8 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>header</title>
     <meta name="description" content="">
+    <link rel="favicon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="mylead-verification" content="ff89b1b9530c12e46c7b2ff6c924c016">
     <!-- ************************* JQuery *************************-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -53,12 +57,12 @@ body {
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="/">COVID-19 Oracle<span class="sr-only">(current)</span></a></li>
-        <li><a href="cases.php">COVID-19 Latest Data</a></li>
+        <li><a href="cases.php">COVID-19 Map</a></li>
         <li><a href="#">Draw Art (coming soon)</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tell me more<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">GitHub (coming soon)</a></li>
+            <li><a href="https://github.com/nastybohemia/nastybohemia" target="_blank">GitHub</a></li>
             <li><a href="#">Blog (coming soon)</a></li>
             <li><a href="#">Twitter (coming soon)</a></li>
             <li><a href="https://www.instagram.com/nastybohemia/" target="_blank">Instagram</a></li>
