@@ -5,11 +5,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>header</title>
     <meta name="description" content="">
-    <link rel="favicon" href="assets/img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- ************************* JQuery *************************-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
