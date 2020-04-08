@@ -81,7 +81,7 @@ body #map {
           transition-delay: 0.5s;
   opacity: 0;
   pointer-events: none;
-  cursor: move;
+  cursor: zoom-in;
   z-index: 9;
   overflow: hidden;
   position: absolute;
@@ -111,7 +111,7 @@ body #map svg {
   position: absolute;
   left: 0;
   top: 0;
-  cursor: move;
+  cursor: crosshair;
 }
 @media (max-width: 1000px) {
   body #map svg {
@@ -133,7 +133,7 @@ body #map svg path {
   transition: fill 0.3s ease-in-out, opacity 0.1s ease-in-out;
   z-index: 0;
   position: relative;
-  cursor: move;
+  cursor: pointer;
   opacity: 0;
 }
 body #map svg path:nth-of-type(1) {
@@ -1141,7 +1141,7 @@ body #map svg path.active {
   fill: var(--orange);
 }
 body #tooltip {
-  width: 250px;
+  width: 300px;
   height: 150px;
   display: -webkit-box;
   display: flex;
@@ -1217,7 +1217,7 @@ body #tooltip .data h4 {
   width: 100%;
   font-family: "Oswald";
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 15px;
   line-height: 1.45;
 }
 body #tooltip .data h4 span {
@@ -1236,10 +1236,11 @@ body #tooltip .data.active {
 </style>
 <script>
     var countryData = "";
-var activeCountry = "";
-var timestamp = 0;
-var mY = 0;
+    var activeCountry = "";
+    var timestamp = 0;
+    var mY = 0;
 
+//connecting API
 function getData() {
   $.ajax({
     url: "https://coronavirus-19-api.herokuapp.com/countries",
@@ -1252,7 +1253,7 @@ function getData() {
 }
 
 getData();
-
+//working with data
 function appendData() {
   for (var i = 0; i < countryData.length; i++) {
     $("#tooltip").append(
@@ -1260,12 +1261,16 @@ function appendData() {
         countryData[i].country +
         "' class='data'><h3>" +
         countryData[i].country +
-        "</h3><h4>Total Cases:<span> " +
-        countryData[i].cases +
-        "</span></h4><h4>Total Deaths:<span> " +
-        countryData[i].deaths +
+        "</h3><h4>Total/Today Cases:<span> " +
+        countryData[i].cases + "/" + countryData[i].todayCases +
+        "</span></h4><h4>Total/Today Deaths:<span> " +
+        countryData[i].deaths + "/" + countryData[i].todayDeaths +
         "</span></h4><h4>Total Recoveries:<span> " +
         countryData[i].recovered +
+        "</span></h4><h4>Critical:<span> " +
+        countryData[i].critical +
+        "</span></h4><h4>People tested:<span> " +
+        countryData[i].totalTests +
         "</span></h4></div>"
     );
   }
@@ -1350,7 +1355,6 @@ require "header.php";
       <rdf:RDF>
         <cc:Work rdf:about="">
           <dc:format>image/svg+xml</dc:format>
-          <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
           <dc:title />
         </cc:Work>
       </rdf:RDF>
