@@ -5,13 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Nasty Bohemia</title>
     <meta name="description" content="">
-    <meta http-equiv="Cache-Control" content="no-store" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <meta http-equiv="Cache-Control" content="no-cache" />
     <meta name = "keywords" content = "Nasty Bohemia, nastybohemia.com, los angeles artist, los angeles video editor, los angeles post-production, los angeles web developer, HTML, Meta Tags, Metadata" />
     <meta name = "author" content = "Nasty Bohemia" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="mylead-verification" content="ff89b1b9530c12e46c7b2ff6c924c016">
-    <!-- Favicons -->
-    <link rel="" href="" type="">
     <!-- ************************* CSS Files ************************* -->
     <link rel="stylesheet" href="assets/css/main.css">
         <!-- ************************* JQuery *************************-->
