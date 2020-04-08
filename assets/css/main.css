@@ -1,4 +1,10 @@
-@import "https://use.typekit.net/swk3xjq.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+/*@font-face {
+    font-family: 'donuts';
+    src: url('fonts/PWYummyDonuts.ttf');
+}
+@import "https://use.typekit.net/swk3xjq.css";*/
+
 html, body, #app {
   height: 100%;
 }
@@ -9,6 +15,7 @@ body {
   margin: 0;
   overflow: hidden;
   text-align: center;
+  font-family: 'donuts';
 }
 
 #app {
@@ -18,7 +25,7 @@ body {
   display: flex;
   -webkit-filter: drop-shadow(1vmin 1vmin 0 rgba(0, 0, 0, 0.5));
           filter: drop-shadow(1vmin 1vmin 0 rgba(0, 0, 0, 0.5));
-  font: 500 25vmin/1.25 rooney-web, serif;
+  font: 400 25vmin/1.25 rooney-web;
   -webkit-box-pack: center;
           justify-content: center;
 }
