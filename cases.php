@@ -34,6 +34,17 @@ body {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+.preloader{
+    position:fixed;
+    margin-top:50px;
+    width:100%;
+    height:100vh;
+    transform: rotate (90deg);
+}
+.preloader-end{
+    opacity:0;
+  pointer-events:none;
+}
 body.loaded {
   background: var(--yellow);
 }
@@ -1329,12 +1340,21 @@ $self.mouseout(function () {
     overwrite: true
   });
 });
+//preloader
+window.addEvenListener('load',() => {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('preloader-end');
+})
 </script>
 <?php
 require "header.php";
 ?>
 </head>
 <body>
+    <div class="preloader">
+        <img src="assets/img/covid-2.png" alt="covid-19" width="200px">
+        <h3>Loading cases...</h3>
+    </div>
 <div id="map">
   <svg class="worldmap" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" enable_background="new 0 0 2000 1001" height="1001px" pretty_print="False" style="stroke-linejoin: round; stroke:#000; fill: none;" version="1.1" viewBox="0 0 2000 1001" width="2000px" id="lower" inkscape:version="0.48.4 r9939" sodipodi:docname="world.svg">
     <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1137" id="namedview231" showgrid="false" inkscape:zoom="1.144" inkscape:cx="593.00732" inkscape:cy="460.46398" inkscape:window-x="1192" inkscape:window-y="118" inkscape:window-maximized="1" inkscape:current-layer="svg2" />
