@@ -1,4 +1,7 @@
-<head>
+<?php
+    require "header.php";
+    ?>
+    <head>
 <style>
     * {
   color: white;
@@ -52,8 +55,26 @@ h2:hover{
 
 .kobe__image {
   position: absolute;
+  cursor: pointer;
   left: 50%;
   margin-left: -170px;
+  transform: translateX(-50%);
+}
+
+.kobe__image:hover {
+  animation: act1 1s infinite;
+}
+
+@keyframes act1 {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(-45%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 #toggle{
@@ -69,49 +90,35 @@ h2:hover{
 #toggle:target + .close{
 	display:block;
 }
+.back {
+  height: 20px;
+  top: 90%;
+  cursor: pointer;
+}
 
+.back:hover {
+  color: yellow;
+}
 </style>
 </head>
 <body>
 <div>
   <div class="container__content">
     <div class="kobe__text">
-      
-				<h1 class="kobe__text-header">
-					KOBE
-				</h1>
-			
+      <h1 class="kobe__text-header">BRYANT</h1>
       <div class="kobe__text-info">
-        <h2>
-					BRYANT
-				</h2>
-        <p>
-					<i>August 23, 1978 - January 26, 2020</i>
-				</p>
-        <p>
-						An American professional basketball player drafted in 1996 by the LA Lakers, he played his entire 20-year career as the team's star shooting guard. <b>
-					<small style="color:#000;">
-					Click image
-					</small>
-					</b>
-				</p
-				<p>
-					<b>
-						<i>
-							Forever a legend.</i>
-					</b>
-				</p>
+        <p><i>August 23, 1978 - January 26, 2020</i></p>
+        <p><b><small style="color:#000;">Click image</small></b></p>
+        <p><b><i>Forever a legend.</i></b></p>
       </div>
     </div>
-    <div class="kobe__image">
-			<a href="#toggle">
+    <div class="kobe__image" onclick="document.getElementById('toggle').style.display='block'">
       <img width="275px" src="https://i.ibb.co/Ct6rW92/pngfuel-com.png" alt="pngfuel-com" border="0">
-			</a>
     </div>
-		
-		<div id="toggle">
-			<iframe width="900" height="615" src="https://vimeo.com/391767802/ab44025e32" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+    <div id="toggle">
+        <span onclick="document.getElementById('toggle').style.display='none'" class="back">&times;</span>
+        <iframe src="https://player.vimeo.com/video/391767802?autoplay=1&color=1626bd&title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" allow="autoplay; fullscreen; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 </body>
