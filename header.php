@@ -53,6 +53,7 @@ body {
       <ul class="nav navbar-nav">
         <li><a href="/">COVID-19 Oracle<span class="sr-only">(current)</span></a></li>
         <li><a href="cases.php">COVID-19 Map</a></li>
+        <li><a href="kobe.php">Bryant memorial</a></li>
         <li><a href="#">Draw Art (coming soon)</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tell me more<span class="caret"></span></a>
