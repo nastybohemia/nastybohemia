@@ -12,9 +12,6 @@
     require "header.php";
     ?>
 <style>
-    * {
-  color: white;
-}
 
 body{
 	height:100%;
@@ -32,20 +29,43 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: 26px;
-}
-
 .video{
     margin-left:30%;
     position: absolute;
+    width:600px;
+    height:706px;
 }
+
+@media only screen and (max-width: 1000px) {
+    body{
+	width:auto;
+  background: linear-gradient(90deg, #FDB927 50%, #552583 50%);
+  overflow: auto;
+}
+    .video{
+    margin-left:10%;
+    margin-right:10%;
+    width:320px;
+    }
+    h1 {
+  font-size: 100px;
+    }
+    .kobe__image {
+        top:35%;
+  left: 0%;
+  right:75%;
+  transform: translateX(+50%);
+    }
+    .gigi__image {
+        top:35%;
+    }
+}
+
 .container__content {
-    margin:10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 115vh;
 }
 
 .kobe__text {
@@ -218,7 +238,7 @@ h2:hover{
 </head>
 <body>
     <div class="video">
-    <iframe src="https://player.vimeo.com/video/391767802?autoplay=1&color=1626bd&title=0&byline=0&portrait=0" width="600" height="406" frameborder="0" allow="autoplay; fullscreen; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/391767802?autoplay=1&color=1626bd&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </div>
 <div>
   <div class="container__content">
@@ -230,11 +250,11 @@ h2:hover{
         <p><b><i></i></b></p>
       </div>
     </div>
-    <div class="kobe__image" onclick="document.getElementById('toggle').style.display='block'">
-      <img width="275px" src="assets/img/kobe-2.png" alt="pngfuel-com" border="0">
+    <div class="kobe__image">
+      <img width="200px" src="assets/img/kobe-3.png" alt="pngfuel-com" border="0">
     </div>
-    <div class="gigi__image" onclick="document.getElementById('toggle').style.display='block'">
-      <img width="275px" src="assets/img/Gigi-1.png" alt="pngfuel-com" border="0">
+    <div class="gigi__image">
+      <img width="150px" src="assets/img/Gigi-2.png" alt="pngfuel-com" border="0">
     </div>
     <div id="toggle">
         <span onclick="document.getElementById('toggle').style.display='none'" class="back">&times;</span>
