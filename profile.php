@@ -229,6 +229,7 @@
        <button class="status-share">Share</button>
       </div>
      </div>
+     <a id="timeline">
      <div class="album box">
          <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/nastybohemia?ref_src=twsrc%5Etfw"></a>
          </div>
@@ -250,6 +251,7 @@
         </div>
        </div>
       </div>
+      </a>
       <div class="album-actions">
        <a href="#" class="album-action">
         <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
