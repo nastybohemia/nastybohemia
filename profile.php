@@ -23,6 +23,8 @@
     <!-- ************************* Semantic *************************-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <!-- ************************* Twitter *************************-->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
 <div class="container" x-data="{ rightSide: false, leftSide: false }">
@@ -42,46 +44,20 @@
    <div class="side-title">MENU</div>
    <div class="side-menu">
     <a href="#">
-     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-      <path d="M9 22V12h6v10" />
-     </svg>
-     Home
+     <i class="space shuttle icon"></i>
+     Home Station
     </a>
     <a href="#">
-     <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-     </svg>
+     <i class="user secret icon"></i>
      Profile
     </a>
     <a href="#">
-     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-      <circle cx="12" cy="10" r="3" /></svg>
+     <i class="eye icon"></i>
      Explore
     </a>
     <a href="#">
-     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-      <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
-     </svg>
+     <i class="id badge icon"></i>
      Membership
-    </a>
-    <a href="#">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-      <circle cx="8.5" cy="8.5" r="1.5" />
-      <path d="M21 15l-5-5L5 21" />
-     </svg>
-     Galery
-    </a>
-    <a href="#">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-      <path d="M16 2v4M8 2v4M3 10h18" />
-     </svg>
-     Events
     </a>
    </div>
   </div>
@@ -111,42 +87,6 @@
      Animals
     </a>
     </div></div>
-    <a href="https://github.com/nastybohemia" class="follow-me" target="_blank">
-   <span class="follow-text">
-    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-    </svg>
-    Follow me on GitHub
-   </span>
-   <span class="developer">
-    <img src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg" />
-    Sophie — @nastybohemia
-   </span>
-  </a>
-  <a href="https://twitter.com/nastybohemia" class="follow-me" target="_blank">
-   <span class="follow-text">
-    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-    </svg>
-    Follow me on Twitter
-   </span>
-   <span class="developer">
-    <img src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg" />
-    Sofia Boho — @nastybohemia
-   </span>
-  </a>
-  <a href="https://www.reddit.com/user/nastybohemia" class="follow-me" target="_blank">
-   <span class="follow-text">
-    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-    </svg>
-    Follow me on Reddit
-   </span>
-   <span class="developer">
-    <img src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg" />
-    @nastybohemia
-   </span>
-  </a>
   <a href="https://www.linkedin.com/in/nastybohemia/" class="follow-me" target="_blank">
    <span class="follow-text">
     <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
@@ -180,16 +120,19 @@
      <a class="profile-menu-link active">Timeline</a>
      <a class="profile-menu-link">About</a>
      <a class="profile-menu-link">Cases</a>
-     <a class="profile-menu-link">Multimedia</a>
-     <a class="profile-menu-link">Study</a>
-     <a class="profile-menu-link">
-     <div class="ui vertical animated button" tabindex="0">
-         <div class="hidden content">Send crypto</div>
-         <div class="visible content">
-             <i class="shop icon"></i>
-             </div>
-             </div>
-             </a>
+     <a class="profile-menu-link"><i class="facebook icon"></i></a>
+     <a class="profile-menu-link"><i class="github icon"></i></a>
+     <a class="profile-menu-link"><i class="google plus icon"></i></a>
+     <a class="profile-menu-link"><i class="imdb icon"></i></a>
+     <a class="profile-menu-link"><i class="instagram icon"></i></a>
+     <a class="profile-menu-link"><i class="linkedin icon"></i></a>
+     <a class="profile-menu-link"><i class="reddit icon"></i></a>
+     <a class="profile-menu-link"><i class="skype icon"></i></a>
+     <a class="profile-menu-link"><i class="snapchat icon"></i></a>
+     <a class="profile-menu-link"><i class="telegram icon"></i></a>
+     <a class="profile-menu-link"><i class="twitter icon"></i></a>
+     <a class="profile-menu-link"><i class="vimeo icon"></i></a>
+     <a class="profile-menu-link"><i class="vk icon"></i></a>
              </div>
              </div>
    <div class="timeline">
@@ -201,35 +144,27 @@
       </div>
       <div class="info">
        <div class="info-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
-         <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+        <i class="briefcase icon"></i>
         Post-production artist<a href="#"></a>
        </div>
        <div class="info-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
-         <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+        <i class="briefcase icon"></i>
         Web Developer<a href="#"></a>
        </div>
        <div class="info-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
-         <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+        <i class="briefcase icon"></i>
         Founder<a href="#">Snaproll Agency</a>
        </div>
        <div class="info-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
-         <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+        <i class="briefcase icon"></i>
         Penetration Tester<a href="#"></a>
        </div>
        <div class="info-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
-         <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+        <i class="briefcase icon"></i>
         Cybersecurity Analyst<a href="#"></a>
        </div>
        <div class="info-item">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-         <path d="M9 22V12h6v10" />
-        </svg>
+        <i class="home icon"></i>
         Live in <a href="#">Los Angeles, CA</a>
        </div>
       </div>
@@ -254,9 +189,12 @@
     <div class="timeline-right">
      <div class="status box">
       <div class="status-menu">
-       <a class="status-menu-item active" href="#">Status</a>
-       <a class="status-menu-item" href="#">Photos</a>
-       <a class="status-menu-item" href="#">Videos</a>
+       <a class="status-menu-item active" href="#timeline">Timeline</a>
+       <a class="status-menu-item" href="#posts">Posts</a>
+       <a class="status-menu-item" href="#photos">Photos</a>
+       <a class="status-menu-item" href="#videos">Videos</a>
+       <a class="status-menu-item" href="#music">Music</a>
+       <a class="status-menu-item" href="#watch-list">Watch List</a>
       </div>
       <div class="status-main">
        <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img">
@@ -292,6 +230,9 @@
       </div>
      </div>
      <div class="album box">
+         <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/nastybohemia?ref_src=twsrc%5Etfw"></a>
+         </div>
+         <div class="album box">
       <div class="status-main">
        <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
        <div class="album-detail">
