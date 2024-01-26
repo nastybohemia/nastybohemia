@@ -1254,7 +1254,7 @@ body #tooltip .data.active {
 //connecting API
 function getData() {
   $.ajax({
-    url: "https://coronavirus-19-api.herokuapp.com/countries",
+    url: "https://restcountries.com/v3.1/independent?status=true",
     type: "GET",
     success: function (response) {
       countryData = $(response);
